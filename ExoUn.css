@@ -1,0 +1,649 @@
+/*
+    font-family: 'Playfair Display', serif;
+
+    font-family: 'Work Sans', sans-serif;
+
+ */
+
+/* RESET */
+html {
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+
+html, body, div, img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Work Sans', sans-serif;
+  line-height: 1.65;
+  letter-spacing: .004em;
+  color: #5f5f5f;
+}
+
+:root {
+  --header-height: 10vh;
+  --div-first-height: 90vh;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  color: #171717;
+  font-size: 2.6rem;
+  text-align: center;
+}
+
+h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  color: #171717;
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+.core_page {
+  width: 100%;
+}
+
+/* =========Styles to apply======= */
+  .bg-white {
+    background-color: white !important;
+  }
+/* ============================= */
+/* ======HEADER & NAV========= */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--header-height);
+  color: white;
+  background-color: inherit;
+  transition: 0.3s cubic-bezier(.9,.03,.69,.22);
+}
+
+.top_container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 8% 0 8%;
+  height: 100%;
+}
+
+nav {
+  width: 20%;
+}
+
+nav ul{
+  font-family: 'Work Sans', sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: .004em;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#logo {
+  width: 25%;
+  display: flex;
+  align-items: center;
+}
+
+#logo .pitch {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.5em;
+  margin: 0;
+}
+
+/* ==================================== */
+/* =========WEBSITE CORE PAGE========== */
+
+
+#first {
+  padding-top: var(--header-height);
+  background-image: url(images/living_room16_9.png);
+  box-shadow: inset 0 0 0 var(--div-first-height) rgba(12, 12, 12, 0.6);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: var(--div-first-height);
+}
+
+#first .content_first {
+  height: 100%;
+  font-size: 1.5em;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 8%;
+  box-sizing: border-box;
+}
+
+#first .content_first h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.18;
+  font-size: 3.4rem;
+}
+
+#first .content_first h2 {
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 0.15em;
+  margin: 0 0 10px 0;
+  color: white;
+}
+
+.font_400 {
+    font-weight: 400 !important;
+}
+
+#first .circle {
+  border: 1px solid white;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#first .circle .angle_down{
+  border: white solid;
+  border-width: 0 1px 1px 0;
+  padding: 4px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+/* ================================== */
+/* ===========PRODUCT================ */
+
+#product {
+    width: 100%;
+    padding: 10% 0;
+}
+
+#product .content_product {
+  width: 60%;
+  padding: 0 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#product .content_product h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: black;
+  margin: 0;
+}
+
+#product .content_product p {
+  text-align: center;
+}
+/* ===================================== */
+/* ============part with stats========== */
+#stats {
+  background-image: url(images/bg-pattern.jpg);
+}
+
+#stats .stat .icon img {
+  width: 68%;
+}
+
+#stats .content_stats {
+  padding: 6% 0;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#stats .content_stats .row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 85%;
+}
+
+
+#stats .content_stats .row .stat {
+  display: flex;
+  justify-content: center;
+  flex-basis: 25%;
+}
+
+#stats .content_stats .row .stat .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 8%;
+}
+
+#stats .content_stats .row .stat .text {
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+}
+
+#stats .content_stats .row .stat .text .top {
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+#stats .content_stats .row .stat .text .bot p {
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 0.97rem
+}
+
+
+/* ===================================== */
+
+/* ==============NEWS & GALLERY============ */
+
+#news {
+  width: 100%;
+}
+
+#news .content_news {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 5%;
+}
+
+#news .content_news .container_head {
+  width: 55%;
+  margin: 5% 0;
+}
+
+#news .content_news .container_head p {
+  text-align: center;
+}
+
+#news .content_news .container_head h2 {
+  font-size: 2.6rem;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+#news .container_gallery {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#news .gallery {
+  width: 70%;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2px;
+}
+
+#news .gallery > img {
+  margin: 2px;
+}
+
+/* ===============QUOTE============ */
+
+#quote {
+  width: 100%;
+  background-image: url(images/bg-pattern.jpg);
+  background-size: cover;
+  /* background-attachment: scroll; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 9% 0;
+}
+
+#quote .contain_quote {
+  width: 50%;
+  display: flex;
+}
+
+
+#quote .contain_quote blockquote.quote_first {
+  width: 100%;
+  text-align: center;
+  margin: 0
+}
+
+#quote .contain_quote blockquote.quote_first > p {
+  font-size: 1.685rem;
+  line-height: 1.45;
+  font-family: 'Playfair Display', serif;
+  color: white;
+}
+
+#quote .contain_quote blockquote.quote_first > p::before {
+  content: "“ ";
+  font-size: 2.2rem;
+  line-height: 1;
+}
+
+#quote .contain_quote blockquote.quote_first > p::after {
+  content: " ”";
+  font-size: 2.2rem;
+  line-height: 1;
+}
+
+#quote .contain_quote blockquote.quote_first > cite {
+  font-family: 'Work Sans', sans-serif;
+  font-size: .96rem;
+  font-weight: 500;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+/* ======================================= */
+/* ============ BLOG PART ================ */
+#blog {
+  padding: 5% 0;
+  background-color: #fafafa;
+}
+
+#blog .contain_blog {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#blog .contain_blog .blog_head {
+  width: 50%;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+#blog .contain_blog .blog_head > p {
+  margin: 0;
+}
+
+#blog .contain_blog .blog_head > h2 {
+  margin-top: 0;
+}
+
+#blog .contain_blog .blog_content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#blog .contain_blog .blog_content .row_posts {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#blog .contain_blog .blog_content .row_posts .post{
+  flex-basis: calc(100% / 3);
+  display: flex;
+  flex-direction: column;
+}
+
+#blog .contain_blog .blog_content .row_posts .post .post_img{
+  display: flex;
+}
+
+#blog .contain_blog .blog_content .row_posts .post .post_img > img{
+  width: 100%;
+}
+
+#blog .contain_blog .blog_content .row_posts .post .post_content {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 5% 10% 10% 10%;
+}
+
+#blog .contain_blog .blog_content .row_posts .post .post_content h2 {
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+#blog .contain_blog .blog_content .row_posts .post .post_content .post_date{
+  color: #171717;
+  font-size: .84rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: 4% 0;
+}
+
+/* ========================================== */
+/* =============CONTACT====================== */
+
+#contact {
+  background-color: #f6f6f6;
+  display: flex;
+  justify-content: center;
+  padding: 5% 0;
+}
+
+#contact .contain_contact {
+  display: flex;
+  flex-wrap: wrap;
+  width: 75%;
+}
+
+#contact .contain_contact .left_contact {
+  flex-basis: 35%;
+}
+
+#contact .contain_contact .left_contact h2 {
+  margin: 0;
+}
+
+#contact .contain_contact .left_contact p {
+  margin: 5% 0;
+}
+
+#contact .contain_contact .left_contact > ul {
+  list-style: none;
+  padding: 0;
+}
+
+#contact .contain_contact .left_contact > ul > li {
+
+}
+
+#contact .contain_contact .left_contact strong {
+  margin-right: 3%;
+  color: black;
+}
+
+#contact .contain_contact .right_contact {
+  flex-basis: 55%;
+  margin-left: 5%;
+}
+
+#contact .contain_contact .right_contact form {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#contact .contain_contact .right_contact form > fieldset {
+  height: 100%;
+  width: 100%;
+  border: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+#contact .contain_contact .right_contact form > fieldset > input[type=submit] {
+  width : 35%;
+  cursor: pointer;
+  border: none;
+  margin-top: 5%;
+  padding: 1em 2em;
+  font-size: .96rem;
+  font-weight: 500;
+  line-height: 1.2;
+  text-align: center;
+  background-color: black;
+  color: #fff;
+}
+
+#contact .contain_contact .right_contact form > fieldset > input[type=submit]:hover {
+  background-color: #444;
+}
+
+#contact .contain_contact .right_contact form > fieldset > div {
+  display: flex;
+}
+
+#contact .contain_contact .right_contact form > fieldset > div:first-child {
+  margin-bottom: 3%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#contact .contain_contact .right_contact form .row {
+  width: 100%;
+  height: 20%;
+}
+
+#row_txtarea {
+  height : 12em !important;
+  margin-top: 4%;
+}
+
+#contact .contain_contact .right_contact form .row > label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#contact .contain_contact .right_contact form > fieldset > div:first-child > label  {
+  width: 48%;
+}
+
+#contact .contain_contact .right_contact form .row > label > input {
+  border: none;
+  width: 100%;
+  height: 100%;
+  padding: 2em 1em;
+  box-sizing: border-box;
+
+}
+
+#contact .contain_contact .right_contact form .row > label > textarea {
+  border: none;
+  resize: none;
+  width: 100%;
+  height: 100%;
+}
+
+::placeholder {
+  font-size: .95rem !important;
+  font-weight: 400 !important;
+  line-height: 1.2 !important;
+  color: #55595c !important;
+}
+
+/* ====================================== */
+/* ==============FOOTER================== */
+footer {
+  background-color: #ebebeb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4% 0;
+}
+
+footer div.socials {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  margin-bottom: 1%;
+}
+
+footer div.socials > div {
+
+}
+
+footer div.socials > div > img {
+  width: 50%;
+}
+
+footer div.credit {
+
+}
+
+/* =================MEDIA QUERIES=================== */
+
+@media screen and (max-width: 630px) {
+  #stats .content_stats .row .stat {
+    flex-basis: 100%;
+  }
+}
+
+@media screen and (min-width: 630px) and (max-width: 1050px) {
+  #stats .content_stats .row .stat {
+    flex-basis: 50%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  #blog .contain_blog .blog_content .row_posts .post {
+    flex-basis: 100%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  #blog .contain_blog .blog_content .row_posts .post {
+    flex-basis: 100%;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+
+  #contact .contain_contact .left_contact {
+    flex-basis: 100%;
+    margin-bottom: 3%;
+  }
+
+
+  #contact .contain_contact .left_contact p {
+    margin: 2% 0;
+  }
+
+
+  #contact .contain_contact .right_contact {
+    flex-basis: 100%;
+    margin-left: 0;
+  }
+}
